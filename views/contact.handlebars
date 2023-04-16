@@ -1,0 +1,100 @@
+{{! CONTACT FORM }}
+<main>
+  <div class="row contactContainer">
+    <div class="mx-auto col-12 col-md-8 col-lg-6">
+      <h2>CONTACT US</h2>
+      <h4>SEND US A MESSAGE</h4>
+      <form>
+        {{! NAME }}
+        <div class="mb-3">
+          <label for="inputName" class="form-label">NAME</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName"
+            placeholder="First Last"
+            required
+          />
+        </div>
+        {{! EMAIL }}
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="me@gmail.com"
+            required
+          />
+          <div id="emailHelp" class="form-text">WE'LL NEVER SHARE YOUR EMAIL
+            ADDRESS WITH ANYONE ELSE.
+          </div>
+        </div>
+        {{! MESSAGE BODY }}
+        <div class="mb-3">
+          <label for="inputMessage" class="form-label">MESSAGE</label>
+          <textarea
+            id="inputMessage"
+            name="inquiry"
+            cols="40"
+            rows="5"
+            class="form-control"
+            placeholder="Ex:  I'd like to get an auto insurance quote."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="mx-auto col-12 col-md-4 col-lg-6 text-center contact2ndhalf">
+      <div>
+        <div class="d-flex justify-content-evenly">
+          <h4>PHONE. <a href="tel:3039965288">(303) 996-5288</a></h4>
+          <h4 style="margin-lef: 20px;">EMAIL.
+            <a href="mailto:tin@hartagency.net">tina@hartagency.net</a></h4>
+        </div><br />
+        <h4>
+          MAILING ADDRESS.
+          <br />
+          6970 S Holly Cit, Ste 104
+          <br />
+          Centennial, CO 80112
+          <br />
+          <br />
+          AENCY HOURS. MON - FRI: 9:00am - 5:00pm
+          <br />
+          <br />
+        </h4></div>
+      <div class="text-center" style="50px;">
+        <a href="tel:3039965288">
+          <button
+            type="button"
+            class="row btn btn-success btn-lg"
+            data-inline="true"
+          >CALL US</button></a>
+        <a
+          href="https://www.google.com/maps/place/Atrium+Insurance+Group,+Inc/@39.589426,-104.9240177,17z/data=!3m2!4b1!5s0x876c86a7f3ac92c5:0xab73ceb0d51d737a!4m6!3m5!1s0x876c86a14cc0ab99:0x568ac63d09e15327!8m2!3d39.589426!4d-104.9214428!16s%2Fg%2F11b6mk_gg9"
+          target="_blank"
+        >
+          <button
+            type="button"
+            class="row btn btn-primary btn-lg"
+            data-inline="true"
+            style="margin-left:50px"
+          >DIRECTIONS</button></a><br />
+        <div class="mapContainer text-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.677151225817!2d-104.9214428!3d39.589425999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c86a14cc0ab99%3A0x568ac63d09e15327!2sAtrium%20Insurance%20Group%2C%20Inc!5e0!3m2!1sen!2sus!4v1681602363207!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
