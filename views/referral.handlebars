@@ -1,1 +1,72 @@
-<h2>About</h2>
+<main class="d-flex flex-column">
+  <header class="policyReviewHeader">
+    <h1>REFER A FRIEND</h1></header>
+  <h4>WE CANNOT WAIT TO MEET YOUR FRIEND. PLEASE SHARE A LITTLE BIT OF
+    INFORMATION WITH US BELOW.</h4>
+  <form class="text-left w-75">
+    <h2>ABOUT YOU:</h2>
+    {{! NAME }}
+    <div class="mb-3">
+      <label for="inputName" class="form-label">NAME</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputName"
+        placeholder="First Last"
+        required
+      />
+    </div>
+    {{! EMAIL }}
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputEmail"
+        aria-describedby="emailHelp"
+        placeholder="me@gmail.com"
+        required
+      />
+    </div>
+    <h2>ABOUT YOUR FRIEND:</h2>
+    {{! NAME }}
+    <div class="mb-3">
+      <label for="inputFriendName" class="form-label">NAME</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputFriendName"
+        placeholder="First Last"
+        required
+      />
+    </div>
+    {{! EMAIL }}
+    <div class="mb-3">
+      <label for="inputFriendEmail" class="form-label">EMAIL ADDRESS</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputFriendEmail"
+        aria-describedby="emailHelp"
+        placeholder="me@gmail.com"
+        required
+      />
+    </div>
+
+    {{! MESSAGE BODY }}
+    <div class="mb-3">
+      <label for="inputMessage" class="form-label">IS THERE ANYTHING YOU'D LIKE
+        US TO KNOW?</label>
+      <textarea
+        id="inputMessage"
+        name="inquiry"
+        cols="40"
+        rows="5"
+        class="form-control"
+        placeholder="Ex:  My friend is looking for car insurance..."
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</main>

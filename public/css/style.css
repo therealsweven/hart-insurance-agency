@@ -71,6 +71,8 @@ main {
   padding-left: 0%;
   max-width: 100%;
   color: var(--light);
+  justify-content: center;
+  align-items: center;
 }
 footer {
   background: var(--accent);
@@ -116,7 +118,6 @@ footer {
 }
 
 .contact2ndhalf {
-  margin-top: 55px;
   margin-left: 15px;
 }
 .contactContainer {
@@ -162,10 +163,10 @@ a {
   text-align: center;
   opacity: 0.7;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 .quoteImageCard:hover {
   opacity: 1;
-  transition: ease-in-out 0.3s;
 }
 .quoteImage {
   height: 30vh;

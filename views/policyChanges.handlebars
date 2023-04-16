@@ -1,1 +1,79 @@
-<h2>Services</h2>
+<main class="d-flex flex-column">
+  <header class="policyReviewHeader">
+    <h1>POLICY CHANGES</h1></header>
+  <h4>REQUEST TO MAKE POLICY CHANGE</h4>
+  <form class="text-left w-50">
+    {{! NAME }}
+    <div class="mb-3">
+      <label for="inputName" class="form-label">NAME</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputName"
+        placeholder="First Last"
+        required
+      />
+    </div>
+    {{! EMAIL }}
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputEmail"
+        aria-describedby="emailHelp"
+        placeholder="me@gmail.com"
+        required
+      />
+    </div>
+    {{! PHONE }}
+    <div class="mb-3">
+      <label for="inputPhone" class="form-label">PHONE</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="inputPhone"
+        placeholder="(303)-333-1234"
+        required
+      />
+    </div>
+    {{! CARRIER }}
+    <div class="mb-3">
+      <label for="inputPhone" class="form-label">INSURANCE CARRIER</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputCarrier"
+        placeholder="Ex: Progressive"
+        required
+      />
+    </div>
+    {{! POLICY NO }}
+    <div class="mb-3">
+      <label for="inputPolicyNumber" class="form-label">POLICY NUMBER</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="inputPolicyNumber"
+        placeholder="Ex: 17-342-234111"
+        required
+      />
+    </div>
+
+    {{! MESSAGE BODY }}
+    <div class="mb-3">
+      <label for="inputMessage" class="form-label">WHAT WOULD YOU LIKE TO
+        CHANGE?</label>
+      <textarea
+        id="inputMessage"
+        name="inquiry"
+        cols="40"
+        rows="5"
+        class="form-control"
+        placeholder="Ex:  I got married, and my new last name is..."
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</main>

@@ -1,1 +1,89 @@
-<h2>Services</h2>
+<main class="d-flex flex-column">
+  <header class="policyReviewHeader">
+    <h1>PROOF OF INSURANCE</h1></header>
+  <h4>REQUEST FOR PROOF OF INSURANCE</h4>
+  <form class="text-left w-75">
+    {{! TYPE }}
+    <div class="mb-3">
+      <label for="change">TYPE OF PROOF REQUIRED</label>
+      <select name="change" id="change" class="form-select" style="color:black">
+        <option value="placeholder" selected></option>
+        <option value="idCard">ID CARD</option>
+        <option value="certificate">CERTIFICATE OF INSURANCE</option>
+        <option value="declaration">DECLARATION PAGES</option>
+        <option value="other">OTHER</option>
+      </select>
+    </div>
+    {{! NAME }}
+    <div class="mb-3">
+      <label for="inputName" class="form-label">NAME</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputName"
+        placeholder="First Last"
+        required
+      />
+    </div>
+    {{! EMAIL }}
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+      <input
+        type="email"
+        class="form-control"
+        id="inputEmail"
+        aria-describedby="emailHelp"
+        placeholder="me@gmail.com"
+        required
+      />
+    </div>
+    {{! PHONE }}
+    <div class="mb-3">
+      <label for="inputPhone" class="form-label">PHONE</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="inputPhone"
+        placeholder="(303)-333-1234"
+        required
+      />
+    </div>
+    {{! CARRIER }}
+    <div class="mb-3">
+      <label for="inputPhone" class="form-label">INSURANCE CARRIER</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inputCarrier"
+        placeholder="Ex: Progressive"
+        required
+      />
+    </div>
+    {{! POLICY NO }}
+    <div class="mb-3">
+      <label for="inputPolicyNumber" class="form-label">POLICY NUMBER</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="inputPolicyNumber"
+        placeholder="Ex: 17-342-234111"
+        required
+      />
+    </div>
+    {{! MESSAGE BODY }}
+    <div class="mb-3">
+      <label for="inputMessage" class="form-label">PLEASE DESCRIBE WHAT YOU NEED
+        FROM US:</label>
+      <textarea
+        id="inputMessage"
+        name="inquiry"
+        cols="40"
+        rows="5"
+        class="form-control"
+        placeholder="Ex:  I need proof of insurance to buy a car."
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</main>
