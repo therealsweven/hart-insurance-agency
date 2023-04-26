@@ -130,6 +130,7 @@ form {
   padding: 2%;
   border-radius: 15px;
   color: var(--light);
+  border: var(--accent) solid 1px;
 }
 
 .form-text {
@@ -148,9 +149,10 @@ a {
 
 /* QUOTES */
 
-.quoteImagesContainer {
+.quoteImageContainer {
   flex-wrap: wrap;
   width: 100%;
+  margin-left: 5%;
 }
 .quoteImageCard {
   width: 350px;

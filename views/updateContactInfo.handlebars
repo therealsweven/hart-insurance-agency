@@ -1,67 +1,77 @@
-<main class="d-flex flex-column">
-  <header class="policyReviewHeader">
+<main id="formContainer" class="d-flex flex-column">
+  <header class="updateContactHeader">
     <h1>UPDATE CONTACT INFORMATION</h1></header>
   <h4>REQUEST TO UPDATE CONTACT INFORMATION</h4>
-  <form class="text-left w-50">
-    {{! NAME }}
-    <div class="mb-3">
-      <label for="inputName" class="form-label">NAME</label>
-      <input
-        type="text"
-        class="form-control"
-        id="inputName"
-        placeholder="First Last"
-        required
-      />
+  <form id="updateContactForm" class="text-left w-50">
+    <div id="formBody">
+      {{! NAME }}
+      <div class="mb-3">
+        <label for="inputName" class="form-label">NAME</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="First Last"
+          required
+        />
+      </div>
+      {{! EMAIL }}
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          aria-describedby="emailHelp"
+          placeholder="me@gmail.com"
+          required
+        />
+      </div>
+      {{! PHONE }}
+      <div class="mb-3">
+        <label for="inputPhone" class="form-label">PHONE</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="inputPhone"
+          placeholder="(303)-333-1234"
+          required
+        />
+      </div>
+      {{! WHAT CHANGED? }}
+      <div class="mb-3">
+        <label for="change">WHAT CHANGED?</label>
+        <select
+          name="change"
+          id="change"
+          class="form-select"
+          style="color:black"
+        >
+          <option value="placeholder" selected></option>
+          <option value="name">NAME</option>
+          <option value="address">ADDRESS</option>
+          <option value="phone">PHONE</option>
+          <option value="email">EMAIL ADDRESS</option>
+          <option value="other">OTHER</option>
+        </select>
+      </div>
+      {{! MESSAGE BODY }}
+      <div class="mb-3">
+        <label for="inputMessage" class="form-label">PLEASE EXPLAIN:</label>
+        <textarea
+          id="inputMessage"
+          name="inquiry"
+          cols="40"
+          rows="5"
+          class="form-control"
+          placeholder="Ex:  I got married, and my new last name is..."
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
     </div>
-    {{! EMAIL }}
-    <div class="mb-3">
-      <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
-      <input
-        type="email"
-        class="form-control"
-        id="inputEmail"
-        aria-describedby="emailHelp"
-        placeholder="me@gmail.com"
-        required
-      />
-    </div>
-    {{! PHONE }}
-    <div class="mb-3">
-      <label for="inputPhone" class="form-label">PHONE</label>
-      <input
-        type="tel"
-        class="form-control"
-        id="inputPhone"
-        placeholder="(303)-333-1234"
-        required
-      />
-    </div>
-    {{! WHAT CHANGED? }}
-    <div class="mb-3">
-      <label for="change">WHAT CHANGED?</label>
-      <select name="change" id="change" class="form-select" style="color:black">
-        <option value="placeholder" selected></option>
-        <option value="name">NAME</option>
-        <option value="address">ADDRESS</option>
-        <option value="phone">PHONE</option>
-        <option value="email">EMAIL ADDRESS</option>
-        <option value="other">OTHER</option>
-      </select>
-    </div>
-    {{! MESSAGE BODY }}
-    <div class="mb-3">
-      <label for="inputMessage" class="form-label">PLEASE EXPLAIN:</label>
-      <textarea
-        id="inputMessage"
-        name="inquiry"
-        cols="40"
-        rows="5"
-        class="form-control"
-        placeholder="Ex:  I got married, and my new last name is..."
-        required
-      ></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <h4 id="successMessage" style="display:none; text-align:center;">Form
+      successfully submitted. We'll get back to you ASAP.</h4>
   </form>
 </main>
+<script src="/js/services/updateContact.js"></script>

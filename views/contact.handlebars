@@ -2,49 +2,58 @@
 <main>
   <h2>CONTACT US</h2>
   <div class="row contactContainer">
-    <div class="mx-auto col-12 col-md-8 col-lg-6">
+    <div
+      class="mx-auto col-12 col-md-8 col-lg-6 d-flex flex-column justify-center"
+    >
       <h4>SEND US A MESSAGE</h4>
-      <form>
-        {{! NAME }}
-        <div class="mb-3">
-          <label for="inputName" class="form-label">NAME</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputName"
-            placeholder="First Last"
-            required
-          />
-        </div>
-        {{! EMAIL }}
-        <div class="mb-3">
-          <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail"
-            aria-describedby="emailHelp"
-            placeholder="me@gmail.com"
-            required
-          />
-          <div id="emailHelp" class="form-text">WE'LL NEVER SHARE YOUR EMAIL
-            ADDRESS WITH ANYONE ELSE.
+      <form id="contactForm" class="text-left w-100">
+        <div id="formBody">
+          {{! NAME }}
+          <div class="mb-3">
+            <label for="inputName" class="form-label">NAME</label>
+            <input
+              type="text"
+              class="form-control w-75"
+              id="inputName"
+              placeholder="First Last"
+              required
+            />
           </div>
+          {{! EMAIL }}
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+            <input
+              type="email"
+              class="form-control w-75"
+              id="inputEmail"
+              aria-describedby="emailHelp"
+              placeholder="me@gmail.com"
+              required
+            />
+            <div id="emailHelp" class="form-text">WE'LL NEVER SHARE YOUR EMAIL
+              ADDRESS WITH ANYONE ELSE.
+            </div>
+          </div>
+          {{! MESSAGE BODY }}
+          <div class="mb-3">
+            <label for="inputMessage" class="form-label">MESSAGE</label>
+            <textarea
+              id="inputMessage"
+              name="inquiry"
+              cols="40"
+              rows="5"
+              class="form-control"
+              placeholder="Ex:  I'd like to get an auto insurance quote."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit</button>
         </div>
-        {{! MESSAGE BODY }}
-        <div class="mb-3">
-          <label for="inputMessage" class="form-label">MESSAGE</label>
-          <textarea
-            id="inputMessage"
-            name="inquiry"
-            cols="40"
-            rows="5"
-            class="form-control"
-            placeholder="Ex:  I'd like to get an auto insurance quote."
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <h4
+          id="successMessage"
+          style="display:none; text-align:center;"
+          class="w-100"
+        >Form successfully submitted. We'll get back to you ASAP.</h4>
       </form>
     </div>
     <div class="mx-auto col-12 col-md-4 col-lg-6 text-center contact2ndhalf">
@@ -98,3 +107,4 @@
     </div>
   </div>
 </main>
+<script src="/js/contact/contact.js"></script>
