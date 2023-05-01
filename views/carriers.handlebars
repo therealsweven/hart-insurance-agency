@@ -1,8 +1,27 @@
-<main class="d-flex flex-column">
+<main class="d-flex flex-column justify-content-center">
   <header>
     <h1>INSURANCE CARRIERS WE REPRESENT</h1></header>
   <h4>WE REPRESENT ONLY THE MOST REPUTABLE INSURANCE CARRIERS TO PROVIDE OUR
     CLIENTS WITH NOTHING LESS THAN EXCEPTIONAL INSURANCE AND SERVICE.<br /><br
     />
     WE ARE PROUD TO REPRESENT THE FOLLOWING CARRIERS:</h4>
+
+  <div class="d-flex flex-wrap justify-content-around">
+    {{#each carriers}}
+      <div class="d-flex flex-column border carrierCard">
+        <img
+          src="/{{this.logo}}"
+          alt={{this.logo}}
+          class="img-fluid carrierImage"
+        />
+        <p>{{this.name}}</p>
+        {{#if this.phone}}
+          <p>Claims: {{this.phone}}</p>
+        {{/if}}
+        {{#if this.phone2}}
+          <p>{{this.note}}: {{this.phone2}}</p>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
 </main>

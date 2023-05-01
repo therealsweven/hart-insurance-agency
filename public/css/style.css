@@ -1,12 +1,14 @@
 :root {
   --light: #ededed;
-  --accent: #da0037;
-  --dark: #444444;
+  --lightish: #764141;
+  --accent: #d90238;
+  --dark: #3d3d3d;
   --darker: #171717;
 }
 
 .navbar {
   background-color: var(--accent);
+
   border-radius: 0px;
   text-align: center;
   font-size: 1vw;
@@ -54,6 +56,14 @@ a:focus,
 
 body {
   background: var(--darker);
+  background-image: linear-gradient(
+    to bottom right,
+    var(--darker),
+    var(--darker),
+    var(--lightish),
+    var(--darker),
+    var(--darker)
+  );
   font-family: "Dosis", sans-serif;
   margin-top: 0px;
   text-align: center;
@@ -155,7 +165,7 @@ a {
   margin-left: 5%;
 }
 .quoteImageCard {
-  width: 350px;
+  width: 400px;
   margin: 0.5%;
   height: 100%;
   border: var(--accent) solid 2px;
@@ -187,6 +197,10 @@ a {
 .quoteImageLabel:hover {
   height: 25%;
   font-size: 5vh;
+}
+
+.carrierImage {
+  width: 20rem;
 }
 
 @media screen and (max-width: 500px) {
