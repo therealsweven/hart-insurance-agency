@@ -1,0 +1,25 @@
+<div class="d-flex flex-wrap justify-content-evenly">
+  {{#each carriers}}
+    <div class="d-flex flex-column align-items-center carrierCard">
+      <div class="d-flex carrierImageContainer">
+        <img
+          src="/{{this.logo}}"
+          alt={{this.logo}}
+          class="img-fluid carrierImage"
+        /></div>
+      <p>{{this.name}}</p>
+      {{#if this.phone}}
+        <p>Claims: {{this.phone}}</p>
+      {{/if}}
+      {{#if this.phone2}}
+        {{#if this.note}}
+          <p>{{this.note}}: </p>
+        {{/if}}
+        <p>{{this.phone2}}</p>
+      {{/if}}
+      {{#if this.link}}
+        <a href="{{this.link}}">Visit Site</a>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>

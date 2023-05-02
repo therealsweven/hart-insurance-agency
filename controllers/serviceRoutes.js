@@ -1,9 +1,10 @@
 const router = require("express").Router();
+let carriers = require("../utils/carriers");
 
 // report a claim
 router.get("/claim", (req, res) => {
   try {
-    res.status(200).render("claim");
+    res.status(200).render("claim", { carriers });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -20,7 +21,7 @@ router.get("/policy-review", (req, res) => {
 // make a payment
 router.get("/payment", (req, res) => {
   try {
-    res.status(200).render("payment");
+    res.status(200).render("payment", { carriers });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -52,7 +53,7 @@ router.get("/proof-of-insurance", (req, res) => {
 // contact my carrier
 router.get("/contact-carrier", (req, res) => {
   try {
-    res.status(200).render("contactCarrier");
+    res.status(200).render("contactCarrier", { carriers });
   } catch (err) {
     res.status(500).json(err);
   }

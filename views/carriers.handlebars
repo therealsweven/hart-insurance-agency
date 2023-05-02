@@ -6,25 +6,5 @@
     />
     WE ARE PROUD TO REPRESENT THE FOLLOWING CARRIERS:</h4>
 
-  <div class="d-flex flex-wrap justify-content-around">
-    {{#each carriers}}
-      <div class="d-flex flex-column border carrierCard">
-        <img
-          src="/{{this.logo}}"
-          alt={{this.logo}}
-          class="img-fluid carrierImage"
-        />
-        <p>{{this.name}}</p>
-        {{#if this.phone}}
-          <p>Claims: {{this.phone}}</p>
-        {{/if}}
-        {{#if this.phone2}}
-          <p>{{this.note}}: {{this.phone2}}</p>
-        {{/if}}
-        {{#if this.link}}
-          <a href="{{this.link}}">Visit Site</a>
-        {{/if}}
-      </div>
-    {{/each}}
-  </div>
+{{> carrierContainer}}
 </main>
