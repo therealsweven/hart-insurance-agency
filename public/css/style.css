@@ -127,6 +127,11 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.required:after {
+  content: " *";
+  color: red;
+}
+
 .contact2ndhalf {
   margin-left: 15px;
 }

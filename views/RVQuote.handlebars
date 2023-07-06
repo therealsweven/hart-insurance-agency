@@ -659,11 +659,11 @@
                 {{! MARRIED? Y/N }}
                 <div class="mb-2">
                   <label
-                    for="primaryMarriedYN"
+                    for="primaryLeasedYN"
                     class="form-label"
                   >MARRIED?</label>
                   <select
-                    id="primaryMarriedYN"
+                    id="primaryLeasedYN"
                     class="form-select"
                     aria-label="Default select example"
                   >
@@ -762,181 +762,169 @@
 
         </div>
         <h2>ADDITIONAL INFORMATION</h2>
-        <div class="d-flex flex-column justify-content-around">
-          <div class="d-flex justify-content-evenly flex-wrap">
-            <div class="d-flex flex-column">
-              {{! Name }}
-              <div class="mb-2 mx-3">
-                <label for="name" class="form-label">NAME</label>
-                <div class="d-flex">
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstName"
-                      aria-describedby="firstHelp"
-                      required
-                    />
-                    <div id="firstHelp" class="form-text">FIRST</div>
-                  </div>
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastName"
-                      aria-describedby="lastHelp"
-                      required
-                    />
-                    <div id="firstHelp" class="form-text">LAST</div>
-                  </div>
+        <div class="d-flex justify-content-around">
+          <div class="d-flex flex-column">
+            {{! Name }}
+            <div class="mb-2 mx-3">
+              <label for="name" class="form-label">NAME</label>
+              <div class="d-flex">
+                <div class="d-flex flex-column w-50 mx-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    aria-describedby="firstHelp"
+                    required
+                  />
+                  <div id="firstHelp" class="form-text">FIRST</div>
                 </div>
-              </div>
-              {{! Address}}
-              <div class="mb-2 mx-3">
-                <label for="address1" class="form-label">ADDRESS</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address1"
-                  aria-describedby="adress1Help"
-                  required
-                />
-                <div id="address1Help" class="form-text mb-2">LINE 1</div>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address2"
-                  aria-describedby="adress2Help"
-                />
-                <div id="address2Help" class="form-text mb-2">LINE 2</div>
-                <div class="d-flex mb-2">
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="city"
-                      aria-describedby="cityHelp"
-                      required
-                    />
-                    <div id="cityHelp" class="form-text">CITY</div>
-                  </div>
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="state"
-                      aria-describedby="stateHelp"
-                      required
-                    />
-                    <div id="stateHelp" class="form-text">STATE</div>
-                  </div>
-                </div>
-                <div class="d-flex mb-2">
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="zip"
-                      aria-describedby="zipHelp"
-                      required
-                    />
-                    <div id="cityHelp" class="form-text">ZIP CODE</div>
-                  </div>
-                  <div class="d-flex flex-column w-50 mx-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="country"
-                      aria-describedby="countryHelp"
-                      required
-                    />
-                    <div id="countryHelp" class="form-text">COUNTRY</div>
-                  </div>
+                <div class="d-flex flex-column w-50 mx-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    aria-describedby="lastHelp"
+                    required
+                  />
+                  <div id="firstHelp" class="form-text">LAST</div>
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column">
-              {{! EMAIL }}
-              <div class="mb-2">
-                <label for="inputEmail" class="form-label">Email Address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="inputEmail"
-                  aria-describedby="emailHelp"
-                  required
-                /><div id="emailHelp" class="form-text">We will never share your
-                  email with anyone without consent.</div>
-              </div>
-              {{! PHONE }}
-              <div class="mb-2">
-                <label for="inputPhone" class="form-label">Phone</label>
-                <input
-                  type="tel"
-                  class="form-control mb-2"
-                  id="inputPhone"
-                  aria-describedby="phoneHelp"
-                />
-
-              </div>
-              {{! PREFERRED CONTACT METHOD }}
-              <div class="mb-2">
-                <label class="form-label">How would you like us to contact you?</label>
-                {{! Email Option }}
-                <div class="form-check">
+            {{! Address}}
+            <div class="mb-2 mx-3">
+              <label for="name" class="form-label">ADDRESS</label>
+              <input
+                type="text"
+                class="form-control"
+                id="address1"
+                aria-describedby="adress1Help"
+                required
+              />
+              <div id="address1Help" class="form-text mb-2">LINE 1</div>
+              <input
+                type="text"
+                class="form-control"
+                id="address2"
+                aria-describedby="adress2Help"
+              />
+              <div id="address2Help" class="form-text mb-2">LINE 2</div>
+              <div class="d-flex mb-2">
+                <div class="d-flex flex-column w-50 mx-3">
                   <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadio"
-                    value="email"
-                    id="emailSelect"
-                    checked
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    aria-describedby="cityHelp"
+                    required
                   />
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Email
-                  </label>
+                  <div id="cityHelp" class="form-text">CITY</div>
                 </div>
-                {{! Phone Option }}
-                <div class="form-check">
+                <div class="d-flex flex-column w-50 mx-3">
                   <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadio"
-                    value="phone"
-                    id="phoneSelect"
+                    type="text"
+                    class="form-control"
+                    id="state"
+                    aria-describedby="stateHelp"
+                    required
                   />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Phone
-                  </label>
+                  <div id="firstHelp" class="form-text">STATE</div>
                 </div>
               </div>
-
-              {{! MESSAGE BODY }}
-              <div class="mb-2">
-                <label for="inputMessage" class="form-label">Message</label>
-                <textarea
-                  id="inputMessage"
-                  name="inquiry"
-                  cols="40"
-                  rows="5"
-                  class="form-control"
-                  required
-                ></textarea>
+              <div class="d-flex mb-2">
+                <div class="d-flex flex-column w-50 mx-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zip"
+                    aria-describedby="zipHelp"
+                    required
+                  />
+                  <div id="cityHelp" class="form-text">ZIP CODE</div>
+                </div>
+                <div class="d-flex flex-column w-50 mx-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="country"
+                    aria-describedby="countryHelp"
+                    required
+                  />
+                  <div id="firstHelp" class="form-text">COUNTRY</div>
+                </div>
               </div>
+            </div>
+            {{! EMAIL }}
+            <div class="mb-2">
+              <label for="inputEmail" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+                required
+              /><div id="emailHelp" class="form-text">We will never share your
+                email with anyone without consent.</div>
+            </div>
+            {{! PHONE }}
+            <div class="mb-2">
+              <label for="inputPhone" class="form-label">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                aria-describedby="phoneHelp"
+              />
+
             </div>
           </div>
-
+          {{! MESSAGE BODY }}
+          <div class="mb-2">
+            <label for="inputMessage" class="form-label">Message</label>
+            <textarea
+              id="inputMessage"
+              name="inquiry"
+              cols="40"
+              rows="5"
+              class="form-control"
+              required
+            ></textarea>
+          </div>
+          {{! PREFERRED CONTACT METHOD }}
+          <div>
+            <label class="form-label">How would you like us to contact you?</label>
+            {{! Email Option }}
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadio"
+                id="emailSelect"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Email
+              </label>
+            </div>
+            {{! Phone Option }}
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadio"
+                id="phoneSelect"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                Phone
+              </label>
+            </div>
+          </div>
         </div>
-        <button
-          id="autoQuoteSubmitBtn"
-          type="submit"
-          class="btn btn-danger"
-        >Submit</button>
+        <button type="submit" class="btn btn-danger">Submit</button>
       </div>
-      <p id="submitMessage" style="display:none;">Your request for a quote has
-        been successfully submitted. We'll get back to you ASAP.</p>
+      <p id="submitMessage" style="display:none;">Inquiry Successfully
+        Submitted. We'll get back to you ASAP.</p>
     </form>
   </div>
 
-  <script src="/js/quotes/autos/autoQuote.js"></script>
+  <script src="/js/quotes/autos/rv.js"></script>
 </main>
