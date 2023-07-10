@@ -317,27 +317,29 @@
                 </div>
               </div>
             </div>
-            {{! MORE THAN TWO }}
-            <div class="mb-2 mx-3">
-              <label for="moreMotos" class="form-label required">DO YOU HAVE
-                MORE THAN TWO MOTORCYCLES TO INSURE?</label>
-              <select
-                id="moreMotos"
-                class="form-select"
-                aria-label="Default select example"
-              >
-                <option selected></option>
-                <option value="NO">NO</option>
-                <option value="YES, 3 TOTAL">YES, 3 TOTAL</option>
-                <option value="YES, 4 TOTAL">YES, 4 TOTAL</option>
-                <option value="YES, 5 TOTAL">YES, 5 TOTAL</option>
-                <option value="YES, 6 TOTAL">YES, 6 TOTAL</option>
-                <option value="YES, 7 TOTAL">YES, 7 TOTAL</option>
-                <option value="YES, 8 TOTAL">YES, 8 TOTAL</option>
-              </select>
-            </div>
           </div>
         </div>
+        <br />
+        {{! MORE THAN TWO }}
+        <div class="mb-2 mx-3 d-flex flex-column align-items-center">
+          <label for="moreMotos" class="form-label required">DO YOU HAVE MORE
+            THAN TWO MOTORCYCLES TO INSURE?</label>
+          <select
+            id="moreMotos"
+            class="form-select w-25"
+            aria-label="Default select example"
+          >
+            <option selected></option>
+            <option value="NO">NO</option>
+            <option value="YES, 3 TOTAL">YES, 3 TOTAL</option>
+            <option value="YES, 4 TOTAL">YES, 4 TOTAL</option>
+            <option value="YES, 5 TOTAL">YES, 5 TOTAL</option>
+            <option value="YES, 6 TOTAL">YES, 6 TOTAL</option>
+            <option value="YES, 7 TOTAL">YES, 7 TOTAL</option>
+            <option value="YES, 8 TOTAL">YES, 8 TOTAL</option>
+          </select>
+        </div>
+
         {{!-- <div class="d-flex justify-content-evenly flex-wrap">
           <div class="d-flex flex-column">
             <h3>VEHICLE #3 ( IF APPLICABLE)</h3>
@@ -773,7 +775,7 @@
 
         </div>
         <h2>ADDITIONAL INFORMATION</h2>
-        <div class="d-flex justify-content-around">
+        <div class="d-flex justify-content-around flex-wrap">
           <div class="d-flex flex-column">
             {{! Name }}
             <div class="mb-2 mx-3">

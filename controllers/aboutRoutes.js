@@ -1,7 +1,7 @@
 const router = require("express").Router();
 let carriers = require("../utils/carriers");
 
-// auto quote
+// about
 router.get("/", (req, res) => {
   try {
     res.status(200).render("about");
@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     res.status(500).json(err);
   }
 });
-// property quote
+// refer
 router.get("/refer", (req, res) => {
   try {
     res.status(200).render("referral");
@@ -17,7 +17,7 @@ router.get("/refer", (req, res) => {
     res.status(500).json(err);
   }
 });
-// business quote
+// carriers
 router.get("/carriers", (req, res) => {
   try {
     // for (i = 0; i < carriers.length; i++) {

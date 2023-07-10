@@ -76,6 +76,7 @@
                     <option selected></option>
                     <option value="Yes">YES </option>
                     <option value="No">NO</option>
+                    required
                   </select>
                 </div>
                 {{! WORK/SCHOOL DISTANCE }}
@@ -754,7 +755,7 @@
             <div class="d-flex flex-column">
               {{! Name }}
               <div class="mb-2 mx-3">
-                <label for="name" class="form-label">NAME</label>
+                <label for="name" class="form-label required">NAME</label>
                 <div class="d-flex">
                   <div class="d-flex flex-column w-50 mx-3">
                     <input
@@ -780,7 +781,10 @@
               </div>
               {{! Address}}
               <div class="mb-2 mx-3">
-                <label for="address1" class="form-label">ADDRESS</label>
+                <label
+                  for="address1"
+                  class="form-label required"
+                >ADDRESS</label>
                 <input
                   type="text"
                   class="form-control"
@@ -843,7 +847,8 @@
               </div>
               {{! EMAIL }}
               <div class="mb-2">
-                <label for="inputEmail" class="form-label">Email Address</label>
+                <label for="inputEmail" class="form-label required">EMAIL
+                  ADDRESS</label>
                 <input
                   type="email"
                   class="form-control"
@@ -855,7 +860,7 @@
               </div>
               {{! PHONE }}
               <div class="mb-2">
-                <label for="inputPhone" class="form-label">Phone</label>
+                <label for="inputPhone" class="form-label">PHONE</label>
                 <input
                   type="tel"
                   class="form-control mb-2"
@@ -866,7 +871,8 @@
             </div>
             <div class="d-flex flex-column">
               <div class="mb-2">
-                <label for="prevCarrier" class="form-label">PREVIOUS CARRIER</label>
+                <label for="prevCarrier" class="form-label required">PREVIOUS
+                  CARRIER</label>
                 <input
                   type="text"
                   class="form-control mb-2"
@@ -878,8 +884,10 @@
                 <div class="d-flex mb-2 justify-content-between">
                   {{! CONTINUOUS COVERAGE}}
                   <div class="mb-2">
-                    <label for="continuousCoverage" class="form-label">CONTINUOS
-                      COVERAGE</label>
+                    <label
+                      for="continuousCoverage"
+                      class="form-label required"
+                    >CONTINUOUS COVERAGE</label>
                     <select
                       id="continuousCoverage"
                       class="form-select"
@@ -897,7 +905,8 @@
                   </div>
                   {{! POLICY EXPIRATION}}
                   <div class="mb-2">
-                    <label for="policyExp" class="form-label">POLICY EXPIRES IN</label>
+                    <label for="policyExp" class="form-label required">POLICY
+                      EXPIRES IN</label>
                     <select
                       id="policyExp"
                       class="form-select"
@@ -919,8 +928,8 @@
                 <div class="d-flex mb-2 justify-content-between">
                   {{! CLAIMS IN 3 YEARS}}
                   <div class="mb-2">
-                    <label for="claimsIn3Yr" class="form-label">CLAIMS IN 3
-                      YEARS</label>
+                    <label for="claimsIn3Yr" class="form-label required">CLAIMS
+                      IN 3 YEARS</label>
                     <select
                       id="claimsIn3Yr"
                       class="form-select"
@@ -936,8 +945,10 @@
                   </div>
                   {{! TICKETS IN 3 YEARS}}
                   <div class="mb-2">
-                    <label for="ticketsIn3Yr" class="form-label">TICKETS IN 3
-                      YEARS</label>
+                    <label
+                      for="ticketsIn3Yr"
+                      class="form-label required"
+                    >TICKETS IN 3 YEARS</label>
                     <select
                       id="ticketsIn3Yr"
                       class="form-select"
@@ -956,8 +967,10 @@
                 </div>
                 {{! COVERAGE DESIRED}}
                 <div class="mb-2">
-                  <label for="coverageDesired" class="form-label">COVERAGE
-                    DESIRED</label>
+                  <label
+                    for="coverageDesired"
+                    class="form-label required"
+                  >COVERAGE DESIRED</label>
                   <select
                     id="coverageDesired"
                     class="form-select"
@@ -984,7 +997,8 @@
               </div>
               {{! PREFERRED CONTACT METHOD }}
               <div class="mb-2">
-                <label class="form-label">How would you like us to contact you?</label>
+                <label class="form-label required">How would you like us to
+                  contact you?</label>
                 {{! Email Option }}
                 <div class="form-check">
                   <input
@@ -1007,6 +1021,7 @@
                     name="flexRadio"
                     value="phone"
                     id="phoneSelect"
+                    required
                   />
                   <label class="form-check-label" for="flexRadioDefault2">
                     Phone
