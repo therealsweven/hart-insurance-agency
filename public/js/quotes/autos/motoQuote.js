@@ -2,22 +2,8 @@
 const handleSubmit = async (e) => {
   e.preventDefault();
   // Object of form data
-  var type;
-  if ($("#autoQuoteForm").parent().attr("id") === "autoQuoteFormEl") {
-    type = "auto";
-  } else if ($("#autoQuoteForm").parent().attr("id") === "motoQuoteFormEl") {
-    type = "moto";
-  } else if ($("#autoQuoteForm").parent().attr("id") === "atvQuoteFormEl") {
-    type = "atv";
-  } else if ($("#autoQuoteForm").parent().attr("id") === "rvQuoteFormEl") {
-    type = "rv";
-  } else if ($("#autoQuoteForm").parent().attr("id") === "boatQuoteFormEl") {
-    type = "boat";
-  } else if ($("#autoQuoteForm").parent().attr("id") === "classicQuoteFormEl") {
-    type = "classic car";
-  }
   var quoteInfo = {
-    type,
+    type: "auto",
     vehicles: {
       vehicle1: {
         VIN: $("#primaryVIN").val(),

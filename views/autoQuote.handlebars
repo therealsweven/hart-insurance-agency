@@ -11,7 +11,7 @@
             <h3>PRIMARY VEHICLE</h3>
             {{! VIN }}
             <div class="mb-2 mx-3">
-              <label for="primaryVIN" class="form-label">VIN</label>
+              <label for="primaryVIN" class="form-label required">VIN</label>
               <input
                 type="text"
                 class="form-control"
@@ -22,7 +22,10 @@
             <div class="d-flex justify-content-between">
               {{! YEAR }}
               <div class="mb-2 mx-3">
-                <label for="primaryYear" class="form-label">YEAR</label>
+                <label
+                  for="primaryYear"
+                  class="form-label required"
+                >YEAR</label>
                 <input
                   type="text"
                   class="form-control"
@@ -32,7 +35,10 @@
               </div>
               {{! MAKE}}
               <div class="mb-2 mx-3">
-                <label for="primaryMake" class="form-label">MAKE</label>
+                <label
+                  for="primaryMake"
+                  class="form-label required"
+                >MAKE</label>
                 <input
                   type="text"
                   class="form-control"
@@ -42,7 +48,10 @@
               </div>
               {{! MODEL}}
               <div class="mb-2 mx-3">
-                <label for="primaryModel" class="form-label">MODEL</label>
+                <label
+                  for="primaryModel"
+                  class="form-label required"
+                >MODEL</label>
                 <input
                   type="text"
                   class="form-control"
@@ -55,8 +64,10 @@
               <div class="d-flex flex-column">
                 {{! WORK/SCHOOL Y/N }}
                 <div class="mb-2">
-                  <label for="primaryWorkSchoolYN" class="form-label">DRIVE TO
-                    WORK/SCHOOL?</label>
+                  <label
+                    for="primaryWorkSchoolYN"
+                    class="form-label required"
+                  >DRIVE TO WORK/SCHOOL?</label>
                   <select
                     id="primaryWorkSchoolYN"
                     class="form-select"
@@ -71,7 +82,7 @@
                 <div class="mb-2">
                   <label
                     for="primaryWorkSchoolDistance"
-                    class="form-label"
+                    class="form-label required"
                   >DISTANCE TO WORK/SCHOOL?</label>
                   <select
                     id="primaryWorkSchoolDistance"
@@ -91,8 +102,10 @@
                 </div>
                 {{! ANNUAL MILEAGE }}
                 <div class="mb-2">
-                  <label for="primaryAnnualMileage" class="form-label">ANNUAL
-                    MILEAGE</label>
+                  <label
+                    for="primaryAnnualMileage"
+                    class="form-label required"
+                  >ANNUAL MILEAGE</label>
                   <select
                     id="primaryAnnualMileage"
                     class="form-select"
@@ -113,8 +126,8 @@
               <div class="d-flex flex-column">
                 {{! LEASED? Y/N }}
                 <div class="mb-2">
-                  <label for="primaryLeasedYN" class="form-label">IS VEHICLE
-                    LEASED?</label>
+                  <label for="primaryLeasedYN" class="form-label required">IS
+                    VEHICLE LEASED?</label>
                   <select
                     id="primaryLeasedYN"
                     class="form-select"
@@ -129,7 +142,7 @@
                 <div class="mb-2">
                   <label
                     for="primaryCollisionDeductible"
-                    class="form-label"
+                    class="form-label required"
                   >COLLISION DEDUCTIBLE</label>
                   <select
                     id="primaryCollisionDeductible"
@@ -148,7 +161,7 @@
                 <div class="mb-2">
                   <label
                     for="primaryCompDeduct"
-                    class="form-label"
+                    class="form-label required"
                   >COMPREHENSIVE DEDUCTIBLE</label>
                   <select
                     id="primaryCompDeduct"
@@ -318,32 +331,17 @@
               {{! YEAR }}
               <div class="mb-2 mx-3">
                 <label for="car3Year" class="form-label">YEAR</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Year"
-                  required
-                />
+                <input type="text" class="form-control" id="car3Year" />
               </div>
               {{! MAKE}}
               <div class="mb-2 mx-3">
                 <label for="car3Make" class="form-label">MAKE</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Make"
-                  required
-                />
+                <input type="text" class="form-control" id="car3Make" />
               </div>
               {{! MODEL}}
               <div class="mb-2 mx-3">
                 <label for="car3Model" class="form-label">MODEL</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Model"
-                  required
-                />
+                <input type="text" class="form-control" id="car3Model" />
               </div>
             </div>
             <div class="d-flex justify-content-around">
@@ -470,32 +468,17 @@
               {{! YEAR }}
               <div class="mb-2 mx-3">
                 <label for="car4Year" class="form-label">YEAR</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Year"
-                  required
-                />
+                <input type="text" class="form-control" id="car4Year" />
               </div>
               {{! MAKE}}
               <div class="mb-2 mx-3">
                 <label for="car4Make" class="form-label">MAKE</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Make"
-                  required
-                />
+                <input type="text" class="form-control" id="car4Make" />
               </div>
               {{! MODEL}}
               <div class="mb-2 mx-3">
                 <label for="car4Model" class="form-label">MODEL</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Model"
-                  required
-                />
+                <input type="text" class="form-control" id="car4Model" />
               </div>
             </div>
             <div class="d-flex justify-content-around">
@@ -619,7 +602,10 @@
             <div class="d-flex flex-column justify-content-center">
               {{! Name }}
               <div class="mb-2 mx-3">
-                <label for="primaryName" class="form-label">NAME</label>
+                <label
+                  for="primaryName"
+                  class="form-label required"
+                >NAME</label>
                 <input
                   type="text"
                   class="form-control"
@@ -638,7 +624,10 @@
               <div class="d-flex flex-column">
                 {{! GENDER}}
                 <div class="mb-2">
-                  <label for="primaryGender" class="form-label">GENDER</label>
+                  <label
+                    for="primaryGender"
+                    class="form-label required"
+                  >GENDER</label>
                   <select
                     id="primaryGender"
                     class="form-select"
@@ -651,7 +640,8 @@
                 </div>
                 {{! DOB }}
                 <div class="mb-2">
-                  <label for="primaryDOB" class="form-label">DATE OF BIRTH</label>
+                  <label for="primaryDOB" class="form-label required">DATE OF
+                    BIRTH</label>
                   <input id="primaryDOB" class="form-control" type="text" />
                 </div>
               </div>
@@ -660,7 +650,7 @@
                 <div class="mb-2">
                   <label
                     for="primaryMarriedYN"
-                    class="form-label"
+                    class="form-label required"
                   >MARRIED?</label>
                   <select
                     id="primaryMarriedYN"
@@ -674,8 +664,10 @@
                 </div>
                 {{! EMPLOYMENT STATUS }}
                 <div class="mb-2">
-                  <label for="primaryEmployment" class="form-label">EMPLOYMENT
-                    STATUS</label>
+                  <label
+                    for="primaryEmployment"
+                    class="form-label required"
+                  >EMPLOYMENT STATUS</label>
                   <select
                     id="primaryEmployment"
                     class="form-select"
@@ -697,12 +689,7 @@
               {{! Name }}
               <div class="mb-2 mx-3">
                 <label for="secondaryName" class="form-label">NAME</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="secondaryName"
-                  required
-                />
+                <input type="text" class="form-control" id="secondaryName" />
               </div>
               <div class="d-flex justify-content-around">
                 {{! DL }}
@@ -723,7 +710,7 @@
               {{! Name }}
               <div class="mb-2 mx-3">
                 <label for="op3Name" class="form-label">NAME</label>
-                <input type="text" class="form-control" id="op3Name" required />
+                <input type="text" class="form-control" id="op3Name" />
               </div>
               <div class="d-flex justify-content-around">
                 {{! DL }}
@@ -743,7 +730,7 @@
               {{! Name }}
               <div class="mb-2 mx-3">
                 <label for="op4Name" class="form-label">NAME</label>
-                <input type="text" class="form-control" id="op4Name" required />
+                <input type="text" class="form-control" id="op4Name" />
               </div>
               <div class="d-flex justify-content-around">
                 {{! DL }}
@@ -854,8 +841,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="d-flex flex-column">
               {{! EMAIL }}
               <div class="mb-2">
                 <label for="inputEmail" class="form-label">Email Address</label>
@@ -877,7 +862,125 @@
                   id="inputPhone"
                   aria-describedby="phoneHelp"
                 />
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="mb-2">
+                <label for="prevCarrier" class="form-label">PREVIOUS CARRIER</label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="prevCarrier"
+                  aria-describedby="prevCarrierHelp"
+                  required
+                />
 
+                <div class="d-flex mb-2 justify-content-between">
+                  {{! CONTINUOUS COVERAGE}}
+                  <div class="mb-2">
+                    <label for="continuousCoverage" class="form-label">CONTINUOS
+                      COVERAGE</label>
+                    <select
+                      id="continuousCoverage"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected></option>
+                      <option value="3+ YEARS">3+ YEARS</option>
+                      <option value="2 YEARS">2 YEARS</option>
+                      <option value="1 YEAR">1 YEAR</option>
+                      <option value="6 MONTHS">6 MONTHS</option>
+                      <option value="UNDER 6 MONTHS">UNDER 6 MONTHS</option>
+                      <option value="NOT CURRENTLY INSURED">NOT CURRENTLY
+                        INSURED</option>
+                    </select>
+                  </div>
+                  {{! POLICY EXPIRATION}}
+                  <div class="mb-2">
+                    <label for="policyExp" class="form-label">POLICY EXPIRES IN</label>
+                    <select
+                      id="policyExp"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected></option>
+                      <option value="NOT SURE">NOT SURE</option>
+                      <option value="A FEW DAYS">A FEW DAYS</option>
+                      <option value="2 WEEKS">2 WEEKS</option>
+                      <option value="1 MONTH">1 MONTH</option>
+                      <option value="2 MONTHS">2 MONTHS</option>
+                      <option value="3-6 MONTHS">3-6 MONTHS</option>
+                      <option value="6+ MONTHS">6+ MONTHS</option>
+                      <option value="NOT CURRENTLY INSURED">NOT CURRENTLY
+                        INSURED</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex mb-2 justify-content-between">
+                  {{! CLAIMS IN 3 YEARS}}
+                  <div class="mb-2">
+                    <label for="claimsIn3Yr" class="form-label">CLAIMS IN 3
+                      YEARS</label>
+                    <select
+                      id="claimsIn3Yr"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected></option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4+">4+</option>
+                    </select>
+                  </div>
+                  {{! TICKETS IN 3 YEARS}}
+                  <div class="mb-2">
+                    <label for="ticketsIn3Yr" class="form-label">TICKETS IN 3
+                      YEARS</label>
+                    <select
+                      id="ticketsIn3Yr"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected></option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6+">6+</option>
+                    </select>
+                  </div>
+                </div>
+                {{! COVERAGE DESIRED}}
+                <div class="mb-2">
+                  <label for="coverageDesired" class="form-label">COVERAGE
+                    DESIRED</label>
+                  <select
+                    id="coverageDesired"
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected></option>
+                    <option value="STANDARD COVERAGE">STANDARD COVERAGE</option>
+                    <option value="PREMIUM COVERAGE">PREMIUM COVERAGE</option>
+                    <option value="STATE MINIMUM">STATE MINIMUM</option>
+                  </select>
+                </div>
+              </div>
+              {{! MESSAGE BODY }}
+              <div class="mb-2">
+                <label for="inputMessage" class="form-label">Message</label>
+                <textarea
+                  id="inputMessage"
+                  name="inquiry"
+                  cols="40"
+                  rows="5"
+                  class="form-control"
+                  required
+                ></textarea>
               </div>
               {{! PREFERRED CONTACT METHOD }}
               <div class="mb-2">
@@ -911,18 +1014,6 @@
                 </div>
               </div>
 
-              {{! MESSAGE BODY }}
-              <div class="mb-2">
-                <label for="inputMessage" class="form-label">Message</label>
-                <textarea
-                  id="inputMessage"
-                  name="inquiry"
-                  cols="40"
-                  rows="5"
-                  class="form-control"
-                  required
-                ></textarea>
-              </div>
             </div>
           </div>
 
