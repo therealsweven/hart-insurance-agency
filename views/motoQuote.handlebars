@@ -70,8 +70,9 @@
                   >DRIVE TO WORK/SCHOOL?</label>
                   <select
                     id="primaryWorkSchoolYN"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected></option>
                     <option value="Yes">YES </option>
@@ -86,8 +87,9 @@
                   >DISTANCE TO WORK/SCHOOL?</label>
                   <select
                     id="primaryWorkSchoolDistance"
-                    class="form-select required"
+                    class="form-select form-control"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected></option>
                     <option value="Less than 5 miles">Less than 5 miles</option>
@@ -108,8 +110,9 @@
                   >ANNUAL MILEAGE</label>
                   <select
                     id="primaryAnnualMileage"
-                    class="form-select required"
+                    class="form-select form-control"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected></option>
                     <option value="Less than 5 miles">LESS THAN 5 MILES</option>
@@ -130,8 +133,9 @@
                     MOTORCYCLE LEASED?</label>
                   <select
                     id="primaryLeasedYN"
-                    class="form-select required"
+                    class="form-select form-control"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected></option>
                     <option value="Yes">YES </option>
@@ -146,8 +150,9 @@
                   >COLLISION DEDUCTIBLE</label>
                   <select
                     id="primaryCollisionDeductible"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
+                    required
                   >
                     <option selected></option>
                     <option value="NO COVERAGE">NO COVERAGE</option>
@@ -165,7 +170,7 @@
                   >COMPREHENSIVE DEDUCTIBLE</label>
                   <select
                     id="primaryCompDeduct"
-                    class="form-select required"
+                    class="form-select form-control required"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -211,7 +216,7 @@
                     WORK/SCHOOL?</label>
                   <select
                     id="secondaryWorkSchoolYN"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -227,7 +232,7 @@
                   >DISTANCE TO WORK/SCHOOL?</label>
                   <select
                     id="secondaryWorkSchoolDistance"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -247,7 +252,7 @@
                     MILEAGE</label>
                   <select
                     id="secondaryAnnualMileage"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -269,7 +274,7 @@
                     LEASED?</label>
                   <select
                     id="secondaryLeasedYN"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -285,7 +290,7 @@
                   >COLLISION DEDUCTIBLE</label>
                   <select
                     id="secondaryCollisionDeductible"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -304,7 +309,7 @@
                   >COMPREHENSIVE DEDUCTIBLE</label>
                   <select
                     id="secondaryCompDeduct"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -326,7 +331,7 @@
             THAN TWO MOTORCYCLES TO INSURE?</label>
           <select
             id="moreMotos"
-            class="form-select w-25"
+            class="form-select form-control w-25"
             aria-label="Default select example"
           >
             <option selected></option>
@@ -339,312 +344,6 @@
             <option value="YES, 8 TOTAL">YES, 8 TOTAL</option>
           </select>
         </div>
-
-        {{!-- <div class="d-flex justify-content-evenly flex-wrap">
-          <div class="d-flex flex-column">
-            <h3>VEHICLE #3 ( IF APPLICABLE)</h3>
-            {{! VIN }}
-            <div class="mb-2 mx-3">
-              <label for="car3VIN" class="form-label">VIN</label>
-              <input type="text" class="form-control" id="car3VIN" />
-            </div>
-            <div class="d-flex justify-content-between">
-              {{! YEAR }}
-              <div class="mb-2 mx-3">
-                <label for="car3Year" class="form-label">YEAR</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Year"
-                  required
-                />
-              </div>
-              {{! MAKE}}
-              <div class="mb-2 mx-3">
-                <label for="car3Make" class="form-label">MAKE</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Make"
-                  required
-                />
-              </div>
-              {{! MODEL}}
-              <div class="mb-2 mx-3">
-                <label for="car3Model" class="form-label">MODEL</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car3Model"
-                  required
-                />
-              </div>
-            </div>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex flex-column">
-                {{! WORK/SCHOOL Y/N }}
-                <div class="mb-2">
-                  <label for="car3WorkSchoolYN" class="form-label">DRIVE TO
-                    WORK/SCHOOL?</label>
-                  <select
-                    id="car3WorkSchoolYN"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Yes">YES </option>
-                    <option value="No">NO</option>
-                  </select>
-                </div>
-                {{! WORK/SCHOOL DISTANCE }}
-                <div class="mb-2">
-                  <label
-                    for="car3WorkSchoolDistance"
-                    class="form-label"
-                  >DISTANCE TO WORK/SCHOOL?</label>
-                  <select
-                    id="car3WorkSchoolDistance"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Less than 5 miles">Less than 5 miles</option>
-                    <option value="5 miles">5 miles</option>
-                    <option value="10 miles">10 miles</option>
-                    <option value="15 miles">15 miles</option>
-                    <option value="20 miles">20 miles</option>
-                    <option value="30 miles">30 miles</option>
-                    <option value="Over 30 miles">Over 30 miles</option>
-                    <option value="N/A">N/A</option>
-                  </select>
-                </div>
-                {{! ANNUAL MILEAGE }}
-                <div class="mb-2">
-                  <label for="car3AnnualMileage" class="form-label">ANNUAL
-                    MILEAGE</label>
-                  <select
-                    id="car3AnnualMileage"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Less than 5 miles">LESS THAN 5 MILES</option>
-                    <option value="5 miles">5 MILES</option>
-                    <option value="10 miles">10 MILES</option>
-                    <option value="15 miles">15 MILES</option>
-                    <option value="20 miles">20 MILES</option>
-                    <option value="30 miles">30 MILES</option>
-                    <option value="Over 30 miles">OVER 30 MILES</option>
-                    <option value="N/A">N/A</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-flex flex-column">
-                {{! LEASED? Y/N }}
-                <div class="mb-2">
-                  <label for="car3LeasedYN" class="form-label">IS VEHICLE
-                    LEASED?</label>
-                  <select
-                    id="car3LeasedYN"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Yes">YES </option>
-                    <option value="No">NO</option>
-                  </select>
-                </div>
-                {{! COLLISION DEDUCTABLE }}
-                <div class="mb-2">
-                  <label
-                    for="car3CollisionDeductible"
-                    class="form-label"
-                  >COLLISION DEDUCTIBLE</label>
-                  <select
-                    id="car3CollisionDeductible"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="NO COVERAGE">NO COVERAGE</option>
-                    <option value="$100">$100</option>
-                    <option value="$250">$250</option>
-                    <option value="$500">$500</option>
-                    <option value="$1000">$1000</option>
-                  </select>
-                </div>
-                {{! COMPREHENSIVE DEDUCTIBLE }}
-                <div class="mb-2">
-                  <label for="car3CompDeduct" class="form-label">COMPREHENSIVE
-                    DEDUCTIBLE</label>
-                  <select
-                    id="car3CompDeduct"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="NO COVERAGE">NO COVERAGE</option>
-                    <option value="$100">$100</option>
-                    <option value="$250">$250</option>
-                    <option value="$500">$500</option>
-                    <option value="$1000">$1000</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-column">
-            <h3>VEHICLE #4 ( IF APPLICABLE )</h3>
-            {{! VIN }}
-            <div class="mb-2 mx-3">
-              <label for="car4VIN" class="form-label">VIN</label>
-              <input type="text" class="form-control" id="car4VIN" />
-            </div>
-            <div class="d-flex justify-content-between">
-              {{! YEAR }}
-              <div class="mb-2 mx-3">
-                <label for="car4Year" class="form-label">YEAR</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Year"
-                  required
-                />
-              </div>
-              {{! MAKE}}
-              <div class="mb-2 mx-3">
-                <label for="car4Make" class="form-label">MAKE</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Make"
-                  required
-                />
-              </div>
-              {{! MODEL}}
-              <div class="mb-2 mx-3">
-                <label for="car4Model" class="form-label">MODEL</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="car4Model"
-                  required
-                />
-              </div>
-            </div>
-            <div class="d-flex justify-content-around">
-              <div class="d-flex flex-column">
-                {{! WORK/SCHOOL Y/N }}
-                <div class="mb-2">
-                  <label for="car4WorkSchoolYN" class="form-label">DRIVE TO
-                    WORK/SCHOOL?</label>
-                  <select
-                    id="car4WorkSchoolYN"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Yes">YES </option>
-                    <option value="No">NO</option>
-                  </select>
-                </div>
-                {{! WORK/SCHOOL DISTANCE }}
-                <div class="mb-2">
-                  <label
-                    for="car4WorkSchoolDistance"
-                    class="form-label"
-                  >DISTANCE TO WORK/SCHOOL?</label>
-                  <select
-                    id="car4WorkSchoolDistance"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Less than 5 miles">Less than 5 miles</option>
-                    <option value="5 miles">5 miles</option>
-                    <option value="10 miles">10 miles</option>
-                    <option value="15 miles">15 miles</option>
-                    <option value="20 miles">20 miles</option>
-                    <option value="30 miles">30 miles</option>
-                    <option value="Over 30 miles">Over 30 miles</option>
-                    <option value="N/A">N/A</option>
-                  </select>
-                </div>
-                {{! ANNUAL MILEAGE }}
-                <div class="mb-2">
-                  <label for="car4AnnualMileage" class="form-label">ANNUAL
-                    MILEAGE</label>
-                  <select
-                    id="car4AnnualMileage"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Less than 5 miles">LESS THAN 5 MILES</option>
-                    <option value="5 miles">5 MILES</option>
-                    <option value="10 miles">10 MILES</option>
-                    <option value="15 miles">15 MILES</option>
-                    <option value="20 miles">20 MILES</option>
-                    <option value="30 miles">30 MILES</option>
-                    <option value="Over 30 miles">OVER 30 MILES</option>
-                    <option value="N/A">N/A</option>
-                  </select>
-                </div>
-              </div>
-              <div class="d-flex flex-column">
-                {{! LEASED? Y/N }}
-                <div class="mb-2">
-                  <label for="car4LeasedYN" class="form-label">IS VEHICLE
-                    LEASED?</label>
-                  <select
-                    id="car4LeasedYN"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="Yes">YES </option>
-                    <option value="No">NO</option>
-                  </select>
-                </div>
-                {{! COLLISION DEDUCTABLE }}
-                <div class="mb-2">
-                  <label
-                    for="car4CollisionDeductible"
-                    class="form-label"
-                  >COLLISION DEDUCTIBLE</label>
-                  <select
-                    id="car4CollisionDeductible"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="NO COVERAGE">NO COVERAGE</option>
-                    <option value="$100">$100</option>
-                    <option value="$250">$250</option>
-                    <option value="$500">$500</option>
-                    <option value="$1000">$1000</option>
-                  </select>
-                </div>
-                {{! COMPREHENSIVE DEDUCTIBLE }}
-                <div class="mb-2">
-                  <label for="car4CompDeduct" class="form-label">COMPREHENSIVE
-                    DEDUCTIBLE</label>
-                  <select
-                    id="car4CompDeduct"
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected></option>
-                    <option value="NO COVERAGE">NO COVERAGE</option>
-                    <option value="$100">$100</option>
-                    <option value="$250">$250</option>
-                    <option value="$500">$500</option>
-                    <option value="$1000">$1000</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-        </div> --}}
         <h2>DRIVER INFORMATION</h2>
         <div class="d-flex justify-content-evenly flex-wrap">
           <div class="d-flex flex-column">
@@ -674,7 +373,7 @@
                   <label for="primaryGender" class="form-label">GENDER</label>
                   <select
                     id="primaryGender"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -697,7 +396,7 @@
                   >MARRIED?</label>
                   <select
                     id="primaryLeasedYN"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -711,7 +410,7 @@
                     STATUS</label>
                   <select
                     id="primaryEmployment"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -908,7 +607,7 @@
                     COVERAGE</label>
                   <select
                     id="continuousCoverage"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -925,7 +624,7 @@
                   <label for="policyExp" class="form-label">POLICY EXPIRES IN</label>
                   <select
                     id="policyExp"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -946,7 +645,7 @@
                   <label for="claimsIn3Yr" class="form-label">CLAIMS IN 3 YEARS</label>
                   <select
                     id="claimsIn3Yr"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -963,7 +662,7 @@
                     YEARS</label>
                   <select
                     id="ticketsIn3Yr"
-                    class="form-select"
+                    class="form-select form-control"
                     aria-label="Default select example"
                   >
                     <option selected></option>
@@ -982,7 +681,7 @@
                 <label for="coverageDesired" class="form-label">COVERAGE DESIRED</label>
                 <select
                   id="coverageDesired"
-                  class="form-select"
+                  class="form-select form-control"
                   aria-label="Default select example"
                 >
                   <option selected></option>

@@ -6,9 +6,15 @@
     <div id="formBody">
       {{! TYPE }}
       <div class="mb-3">
-        <label for="type">TYPE OF PROOF REQUIRED</label>
-        <select name="type" id="type" class="form-select" style="color:black">
-          <option value="placeholder" selected></option>
+        <label class="form-label required" for="type">TYPE OF PROOF REQUIRED</label>
+        <select
+          name="type"
+          id="type"
+          class="form-select form-control"
+          style="color:black"
+          required
+        >
+          <option value=""></option>
           <option value="id Card">ID CARD</option>
           <option value="certificate">CERTIFICATE OF INSURANCE</option>
           <option value="declaration">DECLARATION PAGES</option>
@@ -17,7 +23,7 @@
       </div>
       {{! NAME }}
       <div class="mb-3">
-        <label for="inputName" class="form-label">NAME</label>
+        <label for="inputName" class="form-label required">NAME</label>
         <input
           type="text"
           class="form-control"
@@ -28,7 +34,7 @@
       </div>
       {{! EMAIL }}
       <div class="mb-3">
-        <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+        <label for="inputEmail" class="form-label required">EMAIL ADDRESS</label>
         <input
           type="email"
           class="form-control"
@@ -40,7 +46,7 @@
       </div>
       {{! PHONE }}
       <div class="mb-3">
-        <label for="inputPhone" class="form-label">PHONE</label>
+        <label for="inputPhone" class="form-label required">PHONE</label>
         <input
           type="tel"
           class="form-control"
@@ -51,7 +57,7 @@
       </div>
       {{! CARRIER }}
       <div class="mb-3">
-        <label for="inputCarrier" class="form-label">INSURANCE CARRIER</label>
+        <label for="inputCarrier" class="form-label required">INSURANCE CARRIER</label>
         <input
           type="text"
           class="form-control"
@@ -62,7 +68,7 @@
       </div>
       {{! POLICY NO }}
       <div class="mb-3">
-        <label for="inputPolicyNumber" class="form-label">POLICY NUMBER</label>
+        <label for="inputPolicyNumber" class="form-label required">POLICY NUMBER</label>
         <input
           type="text"
           class="form-control"
@@ -73,8 +79,8 @@
       </div>
       {{! MESSAGE BODY }}
       <div class="mb-3">
-        <label for="inputMessage" class="form-label">PLEASE DESCRIBE WHAT YOU
-          NEED FROM US:</label>
+        <label for="inputMessage" class="form-label required">PLEASE DESCRIBE
+          WHAT YOU NEED FROM US:</label>
         <textarea
           id="inputMessage"
           name="inquiry"

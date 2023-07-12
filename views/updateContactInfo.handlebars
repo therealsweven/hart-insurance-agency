@@ -6,7 +6,7 @@
     <div id="formBody">
       {{! NAME }}
       <div class="mb-3">
-        <label for="inputName" class="form-label">NAME</label>
+        <label for="inputName" class="form-label required">NAME</label>
         <input
           type="text"
           class="form-control"
@@ -17,7 +17,7 @@
       </div>
       {{! EMAIL }}
       <div class="mb-3">
-        <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+        <label for="inputEmail" class="form-label required">EMAIL ADDRESS</label>
         <input
           type="email"
           class="form-control"
@@ -29,7 +29,7 @@
       </div>
       {{! PHONE }}
       <div class="mb-3">
-        <label for="inputPhone" class="form-label">PHONE</label>
+        <label for="inputPhone" class="form-label required">PHONE</label>
         <input
           type="tel"
           class="form-control"
@@ -40,14 +40,15 @@
       </div>
       {{! WHAT CHANGED? }}
       <div class="mb-3">
-        <label for="change">WHAT CHANGED?</label>
+        <label class="form-label required" for="change">WHAT CHANGED?</label>
         <select
           name="change"
           id="change"
-          class="form-select"
+          class="form-select form-control"
           style="color:black"
+          required
         >
-          <option value="placeholder" selected></option>
+          <option value=""></option>
           <option value="name">NAME</option>
           <option value="address">ADDRESS</option>
           <option value="phone">PHONE</option>
@@ -57,7 +58,7 @@
       </div>
       {{! MESSAGE BODY }}
       <div class="mb-3">
-        <label for="inputMessage" class="form-label">PLEASE EXPLAIN:</label>
+        <label for="inputMessage" class="form-label required">PLEASE EXPLAIN:</label>
         <textarea
           id="inputMessage"
           name="inquiry"

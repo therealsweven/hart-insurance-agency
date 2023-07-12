@@ -29,6 +29,7 @@ router.post("/update-contact", (req, res) => {
 router.post("/policy-change", (req, res) => {
   try {
     console.log(req.body);
+    emails.sendPolicyChangeReq2Tina(req.body);
     res.status(200).json("successful");
   } catch (err) {
     res.status(500).json(err);
@@ -39,6 +40,7 @@ router.post("/policy-change", (req, res) => {
 router.post("/proof", (req, res) => {
   try {
     console.log(req.body);
+    emails.sendProofReq2Tina(req.body);
     res.status(200).json("successful");
   } catch (err) {
     res.status(500).json(err);
@@ -49,6 +51,7 @@ router.post("/proof", (req, res) => {
 router.post("/consult", (req, res) => {
   try {
     console.log(req.body);
+    emails.sendConsultReq2Tina(req.body);
     res.status(200).json("successful");
   } catch (err) {
     res.status(500).json(err);

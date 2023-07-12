@@ -51,7 +51,7 @@ a:focus,
   /* color: #54bab9; */
   color: white;
   text-decoration: none;
-  text-shadow: rgb(246, 255, 125) 2px 2px 5px;
+  text-shadow: rgb(255, 125, 125) 2px 2px 5px;
 }
 
 body {
@@ -163,6 +163,11 @@ a {
 }
 
 /* QUOTES */
+/* #autoQuoteHeader {
+  background-image: url("https://images.unsplash.com/photo-1643142309058-c5879cf9dc87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80");
+  width: 100%;
+  height: 300px;
+} */
 
 .quoteImageContainer {
   flex-wrap: wrap;

@@ -6,9 +6,16 @@
     <div id="formBody">
       {{! TYPE }}
       <div class="mb-3">
-        <label for="type">WHAT TYPE OF CONSULTATION WOULD YOU LIKE?</label>
-        <select name="type" id="type" class="form-select" style="color:black">
-          <option value="placeholder" selected></option>
+        <label class="form-label required" for="type">WHAT TYPE OF CONSULTATION
+          WOULD YOU LIKE?</label>
+        <select
+          name="type"
+          id="type"
+          class="form-select form-control"
+          style="color:black"
+          required
+        >
+          <option value=""></option>
           <option value="phone">PHONE</option>
           <option value="in person">FACE TO FACE</option>
           <option value="other">OTHER</option>
@@ -16,7 +23,7 @@
       </div>
       {{! NAME }}
       <div class="mb-3">
-        <label for="inputName" class="form-label">NAME</label>
+        <label for="inputName" class="form-label required">NAME</label>
         <input
           type="text"
           class="form-control"
@@ -27,7 +34,7 @@
       </div>
       {{! EMAIL }}
       <div class="mb-3">
-        <label for="inputEmail" class="form-label">EMAIL ADDRESS</label>
+        <label for="inputEmail" class="form-label required">EMAIL ADDRESS</label>
         <input
           type="email"
           class="form-control"
@@ -39,7 +46,7 @@
       </div>
       {{! PHONE }}
       <div class="mb-3">
-        <label for="inputPhone" class="form-label">PHONE</label>
+        <label for="inputPhone" class="form-label required">PHONE</label>
         <input
           type="tel"
           class="form-control"
@@ -50,8 +57,8 @@
       </div>
       {{! MESSAGE BODY }}
       <div class="mb-3">
-        <label for="inputMessage" class="form-label">WHAT WOULD YOU LIKE TO
-          DISCUSS?</label>
+        <label for="inputMessage" class="form-label required">WHAT WOULD YOU
+          LIKE TO DISCUSS?</label>
         <textarea
           id="inputMessage"
           name="inquiry"
