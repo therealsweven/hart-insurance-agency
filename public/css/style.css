@@ -235,8 +235,29 @@ a {
   border-radius: 20px;
 }
 
+.home-left {
+  width: 60%;
+}
+.home-side {
+  width: 30%;
+}
+.fb-page {
+  width: 90%;
+}
+
 @media screen and (max-width: 500px) {
   #homeBtnCont {
     flex-direction: column;
+  }
+  .home-left {
+    width: 95%;
+  }
+  .home-side {
+    width: 95%;
+    margin-top: 3%;
+  }
+  .nav-link,
+  .nav-item {
+    font-size: 3rem;
   }
 }
